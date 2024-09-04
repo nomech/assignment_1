@@ -1,0 +1,73 @@
+:root{
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #6e6e73;
+    --button-bg: #f7f7f7;;
+}
+
+body {
+  margin: unset; /* Removes the space around the page */
+  color: var(--primary-font-color);
+}
+
+.product-header {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+}
+
+/* Adds a blurry image to the header */
+.product-header::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: url("../assets/images/header-banner.webp");
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px) brightness(0.8);
+  z-index: -1;
+}
+
+.product-header__list {
+  margin: 0;
+}
+
+.product-header__item {
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.product-header__link {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+.product-header__link:hover {
+  text-decoration: underline;
+}
+
+.product-header__banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.product-header__title {
+  font-size: 2.3rem;
+}
+
+.product-header__order-now-button {
+    margin: 3em 0 0 0;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    font-size: 1.1em;
+    background-color: var(--button-bg);
+    padding: 0.8em 1.1em;
+    border-radius: 1.2rem;
+    border: 1px solid #a3a3a3;
+}

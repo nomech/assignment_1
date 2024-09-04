@@ -1,12 +1,11 @@
-:root{
-    --primary-font-color: #ffffff;
-    --secondary-font-color: #6e6e73;
-    --button-bg: #f7f7f7;;
-}
+@import "./fonts.css";
+@import "./colors.css";
+
 
 body {
   margin: unset; /* Removes the space around the page */
   color: var(--primary-font-color);
+  font-family: var(--primary-font);
 }
 
 .product-header {

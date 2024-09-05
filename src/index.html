@@ -9,11 +9,16 @@
 </head>
 
 <body>
+
+    <!-- the Header displayes an image of which is blurred out, ontop of it is the nav, title and a quoute from the producer -->
     <header class="product-header">
         <nav class="product-header__nav">
             <ul class="product-header__list">
                 <li class="product-header__item"><a class="product-header__link" href="#">Home</a></li>
                 <li class="product-header__item"><a class="product-header__link" href="#product-features">Features</a>
+                </li>
+                <li class="product-header__item"><a class="product-header__link" href="#product-details">Technical
+                        Details</a>
                 </li>
             </ul>
         </nav>
@@ -27,11 +32,13 @@
                         and beryllium" <sub>-Apple</sub></em>
                 </p>
             </blockquote>
+            <!-- A button to take the user to the order form -->
             <a href="./pages/order_form.html" rel="no-follow" class="product-header__order-now-button"
                 role="button">Order Now</a>
         </section>
     </header>
     <main>
+        <!-- Images of the product  -->
         <div role="img" class="product-images">
             <img class="product-images__main-image" src="./assets/images/product-image.jpg"
                 alt="An image displaying the front and back of an iPhone 15">
@@ -43,6 +50,7 @@
             </div>
         </div>
 
+        <!-- A section dedicated to tell about the key features of the product -->
         <section id="product-features" class="product-features">
             <h2 class="product-features__title">Product features</h2>
             <ul class="product-features__list">
@@ -62,6 +70,120 @@
                 <li class="product-features__item">Supported formats include HEVC, H.264, and ProRes</li>
                 <li class="product-features__item">USB-C connector</li>
                 <li class="product-features__item">Built-in rechargeable lithium-ion battery</li>
+            </ul>
+        </section>
+
+        <!-- An banner of the product to give a break in the page -->
+        <div role="banner" class="product-banner">
+            <img class="product-banner__image" src="./assets/images/product-banner.webp"
+                alt="An image of two iPhones held by hands">
+        </div>
+        <!-- A detailed list of the products specifications -->
+        <section id="product-details" class="product-details">
+            <h2 class="product-details__title">Technical details</h2>
+            <ul class="product-details__list">
+
+                <li class="product-details__item--title">Capacity</li>
+                <li class="product-details__item">
+                    <ul class="product-details__sublist">
+                        <li class="product-details__subitem">128GB</li>
+                        <li class="product-details__subitem">256GB</li>
+                        <li class="product-details__subitem">512G</li>
+                    </ul>
+                </li>
+
+                <li class="product-details__item--title">Display</li>
+                <li class="product-details__item">
+                    <ul class="product-details__sublist">
+                        <li class="product-details__subitem product-details__subitem--first">Super Retina XDR display
+                        </li>
+                        <li class="product-details__subitem">6.1‑inch (diagonal) all‑screen OLED display</li>
+                        <li class="product-details__subitem">2556‑by‑1179-pixel resolution at 460 ppi</li>
+                        <li class="product-details__subitem">Dynamic Island</li>
+                        <li class="product-details__subitem">HDR display</li>
+                        <li class="product-details__subitem">True Tone</li>
+                        <li class="product-details__subitem">Wide color (P3)</li>
+                        <li class="product-details__subitem">Haptic Touch</li>
+                        <li class="product-details__subitem">2,000,000:1 contrast ratio (typical)</li>
+                        <li class="product-details__subitem">1000 nits max brightness (typical); 1600 nits peak
+                            brightness (HDR); 2000 nits peak brightness</li>
+                        <li class="product-details__subitem">(outdoor)</li>
+                        <li class="product-details__subitem">Fingerprint-resistant oleophobic coating</li>
+                        <li class="product-details__subitem">Support for display of multiple languages and characters
+                            simultaneously</li>
+                    </ul>
+                </li>
+                <li class="product-details__item--title">Chip</li>
+                <li class="product-details__item">
+                    <ul class="product-details__sublist">
+                        <li class="product-details__subitem product-details__subitem--first">A16 Bionic chip</li>
+                        <li class="product-details__subitem">6‑core CPU with 2 performance and 4 efficiency cores</li>
+                        <li class="product-details__subitem">5‑core GPU</li>
+                        <li class="product-details__subitem">16‑core Neural Engine</li>
+                    </ul>
+                </li>
+
+                <li class="product-details__item--title">Camera</li>
+                <li class="product-details__item">
+                    <ul class="product-details__sublist">
+                        <li class="product-details__subitem">Advanced dual-camera system</li>
+                        <li class="product-details__subitem">
+                            48MP Main: 26 mm, ƒ/1.6 aperture, sensor‑shift optical image stabilization, 100% Focus
+                            Pixels,support for super-high-resolution photos (24MP and 48MP)
+                        </li>
+                        <li class="product-details__subitem">12MP Ultra Wide: 13 mm, ƒ/2.4 aperture and 120° field of view</li>
+                        <li class="product-details__subitem">12MP 2x Telephoto (enabled by quad-pixel sensor): 52 mm, ƒ/1.6 aperture, sensor-shift optical</li>
+                        <li class="product-details__subitem">image stabilization, 100% Focus Pixels</li>
+                        <li class="product-details__subitem">2x optical zoom in, 2x optical zoom out; 4x optical zoom range</li>
+                        <li class="product-details__subitem">Digital zoom up to 10x</li>
+                        <li class="product-details__subitem">Sapphire crystal lens cover</li>
+                        <li class="product-details__subitem">True Tone flash</li>
+                        <li class="product-details__subitem">Photonic Engine</li>
+                        <li class="product-details__subitem">Deep Fusion</li>
+                        <li class="product-details__subitem">Smart HDR 5</li>
+                        <li class="product-details__subitem">Next-generation portraits with Focus and Depth Control</li>
+                        <li class="product-details__subitem">Portrait Lighting with six effects</li>
+                        <li class="product-details__subitem">Night mode</li>
+                        <li class="product-details__subitem">Panorama (up to 63MP)</li>
+                        <li class="product-details__subitem">Photographic Styles</li>
+                        <li class="product-details__subitem">Wide color capture for photos and Live Photos</li>
+                        <li class="product-details__subitem">Lens correction (Ultra Wide)</li>
+                        <li class="product-details__subitem">Advanced red‑eye correction</li>
+                        <li class="product-details__subitem">Auto image stabilization</li>
+                        <li class="product-details__subitem">Burst mode</li>
+                        <li class="product-details__subitem">Photo geotagging</li>
+                        <li class="product-details__subitem">Image formats captured: HEIF and JPEG</li>
+                    </ul>
+                </li>
+
+                <li class="product-details__item--title">Video Recording</li>
+                <li class="product-details__item">
+                    <ul class="product-details__sublist">
+                        <li class="product-details__subitem product-details__subitem--first">4K video recording at 24
+                            fps, 25 fps, 30 fps, or 60 fps</li>
+                        <li class="product-details__subitem">1080p HD video recording at 25 fps, 30 fps, or 60 fps</li>
+                        <li class="product-details__subitem">720p HD video recording at 30 fps</li>
+                        <li class="product-details__subitem">Cinematic mode up to 4K HDR at 30 fps</li>
+                        <li class="product-details__subitem">Action mode up to 2.8K at 60 fps</li>
+                        <li class="product-details__subitem">HDR video recording with Dolby Vision up to 4K at 60 fps
+                        </li>
+                        <li class="product-details__subitem">Slo‑mo video support for 1080p at 120 fps or 240 fps</li>
+                        <li class="product-details__subitem">Time‑lapse video with stabilization</li>
+                        <li class="product-details__subitem">Night mode Time-lapse</li>
+                        <li class="product-details__subitem">QuickTake video</li>
+                        <li class="product-details__subitem">Sensor-shift optical image stabilization for video (Main)
+                        </li>
+                        <li class="product-details__subitem">Digital zoom up to 6x</li>
+                        <li class="product-details__subitem">Audio zoom</li>
+                        <li class="product-details__subitem">True Tone flash</li>
+                        <li class="product-details__subitem">Cinematic video stabilization (4K, 1080p, and 720p)</li>
+                        <li class="product-details__subitem">Continuous autofocus video</li>
+                        <li class="product-details__subitem">Take 8MP still photos while recording 4K video</li>
+                        <li class="product-details__subitem">Playback zoom</li>
+                        <li class="product-details__subitem">Video formats recorded: HEVC and H.264</li>
+                        <li class="product-details__subitem">Stereo recording</li>
+                    </ul>
+                </li>
             </ul>
         </section>
     </main>

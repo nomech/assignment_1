@@ -1,3 +1,9 @@
+
+/* This file contains all the fonts, I've opted to use them locally since using google fonts will make the site breach GDPR */
+/* Source:https://thehackernews.com/2022/01/german-court-rules-websites-embedding.html */
+/* https://rewis.io/urteile/urteil/lhm-20-01-2022-3-o-1749320/ */
+/* LG München, Urteil vom 20.01.2022, Az. 3 O 17493/20 (REWIS RS 2022, 1892)*/
+
 @font-face {
     font-family: "Roboto";
     src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
@@ -38,3 +44,4 @@
   :root{
     --primary-font: "Roboto", "sans-serif";
   }
+  

@@ -1,0 +1,20 @@
+/* This file contains the style for the home button that is found in the right down corner*/
+
+@import "./_reset.css";
+@import "./_fonts.css";
+@import "./_colors.css";
+@import "./_sizes.css";
+
+.home-button {
+    background: #ffffff;
+    width: 1.5rem;
+    position: fixed;
+    bottom: 1rem;
+    z-index: 99999;
+    right: 1rem;
+    border-radius: 64px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3px 5px;
+    display: flex;
+    place-content: center;
+  }

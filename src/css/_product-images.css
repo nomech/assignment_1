@@ -1,0 +1,29 @@
+/* This file contains the styles for the image section of the site */
+
+.product-images__main-image {
+  width: 50%;
+}
+
+.product-images__thumbnail {
+  width: 25%;
+}
+
+.product-images,
+.product-images__thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+.product-images {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: var(--margin-medium);
+}
+
+
+
+@media (max-width: 430px) {
+  .product-images__main-image {
+    width: 100%;
+  }
+}

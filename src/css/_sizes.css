@@ -1,0 +1,17 @@
+
+/* This file contains standardized sizes */
+
+:root {
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem; 
+  --margin-large: 1.5rem; 
+  --margin-xlarge: 2rem;
+  --margin-xxlarge: 2.5rem;
+  --margin-xxxlarge: 3rem;
+
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem; 
+  --padding-large: 1.5rem; 
+  --padding-none: 0;
+
+    }

@@ -11,16 +11,14 @@
 <body>
 
     <!-- the Header displayes an image of which is blurred out, ontop of it is the nav, title and a quoute from the producer -->
-    <header class="product-header" id="product-header">
+    <header id="product-header" class="product-header">
         <nav class="product-header__nav">
             <ul class="product-header__list">
                 <li class="product-header__item"><a class="product-header__link" href="#">Home</a></li>
                 <li class="product-header__item"><a class="product-header__link" href="#product-features">Features</a>
                 </li>
-                <li class="product-header__item"><a class="product-header__link" href="#product-details">Technical
-                        Details</a>
+                <li class="product-header__item"><a class="product-header__link" href="#product-details">Details</a>
                 </li>
-            </ul>
         </nav>
 
         <section class="product-header__banner">
@@ -38,8 +36,9 @@
         </section>
     </header>
 
-    <main>
+    <main id="product-features" class="product-features">
         <!-- Images of the product  -->
+        <h2 class="product-features__title">Product features</h2>
         <div role="img" class="product-images">
             <img class="product-images__main-image" src="./assets/images/product-image.jpg"
                 alt="An image displaying the front and back of an iPhone 15">
@@ -52,8 +51,7 @@
         </div>
 
         <!-- A section dedicated to tell about the key features of the product -->
-        <section id="product-features" class="product-features">
-            <h2 class="product-features__title">Product features</h2>
+        <section class="product-features_section">
             <ul class="product-features__list">
                 <li class="product-features__item">Super Retina XDR display</li>
                 <li class="product-features__item">48MP Main: 26 mm, ƒ/1.6 aperture, sensor‑shift optical image
@@ -82,17 +80,17 @@
             <!-- A detailed list of the products specifications -->
             <ul class="product-details__list">
 
-                <li class="product-details__item--title">Capacity</li>
+                <li class="product-details__item--highlighted">Capacity</li>
                 <li class="product-details__item">
                     <ul class="product-details__sublist">
                         <li class="product-details__subitem product-details__subitem--centered">128GB</li>
-                        <li class="product-details__subitem product-details__subitem--centered">256GB</li>
+                        <li class="product-details__subitem  product-details__subitem--centered">256GB</li>
                         <li class="product-details__subitem product-details__subitem--centered">512G</li>
                         <li class="product-details__subitem product-details__subitem--centered">1TB</li>
                     </ul>
                 </li>
 
-                <li class="product-details__item--title">Display</li>
+                <li class="product-details__item--highlighted">Display</li>
                 <li class="product-details__item">
                     <ul class="product-details__sublist">
                         <li class="product-details__subitem product-details__subitem--first">Super Retina XDR display
@@ -113,7 +111,7 @@
                             simultaneously</li>
                     </ul>
                 </li>
-                <li class="product-details__item--title">Chip</li>
+                <li class="product-details__item--highlighted">Chip</li>
                 <li class="product-details__item">
                     <ul class="product-details__sublist">
                         <li class="product-details__subitem product-details__subitem--first">A17 Bionic chip</li>
@@ -123,7 +121,7 @@
                     </ul>
                 </li>
 
-                <li class="product-details__item--title">Camera</li>
+                <li class="product-details__item--highlighted">Camera</li>
                 <li class="product-details__item">
                     <ul class="product-details__sublist">
                         <li class="product-details__subitem">Advanced dual-camera system</li>
@@ -159,7 +157,7 @@
                     </ul>
                 </li>
 
-                <li class="product-details__item--title">Video Recording</li>
+                <li class="product-details__item--highlighted">Video Recording</li>
                 <li class="product-details__item">
                     <ul class="product-details__sublist">
                         <li class="product-details__subitem product-details__subitem--first">4K video recording at 24
@@ -196,8 +194,8 @@
 
     </footer>
 
-    <a class="home-button" role="button" href="#product-header"> <img src="./assets/images/arrow-up.svg" alt="Image of an arrow pointing up"
-            class="home__image"> </a>
+    <a class="home-button" role="button" href="#product-header"> <img src="./assets/images/arrow-up.svg"
+            alt="Image of an arrow pointing up" class="home__image"> </a>
 </body>
 
 </html>

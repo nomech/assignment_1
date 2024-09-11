@@ -1,0 +1,21 @@
+@import "./_reset.css";
+@import "./_fonts.css";
+@import "./_colors.css";
+@import "./_sizes.css";
+
+.order-form__radio-input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+  }
+  
+  .order-form__radio-group{
+    width: 3rem;
+   height: 3rem;
+  }
+  
+  .order-form__radio-label--black{
+    background-color: #000000;
+  }

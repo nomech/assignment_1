@@ -23,6 +23,10 @@
 
 
 @media (max-width: 430px) {
+  .product-images{
+    grid-column: 1;
+  }
+
   .product-images__main-image {
     width: 100%;
   }

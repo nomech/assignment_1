@@ -1,13 +1,8 @@
-/* This file contains the styles for the header of the site */
-
-@import "./_reset.css";
-@import "./_fonts.css";
-@import "./_colors.css";
-@import "./_sizes.css";
+@import "./_utility.css";
 
 .product-header {
     position: relative;
-    height: 50vh;
+    height: 35vh;
     min-height: 375px;
     overflow: hidden;
     color: var(--primary-font-color);

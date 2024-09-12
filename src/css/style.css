@@ -1,15 +1,11 @@
 /* This is the main CSS faile */
 
-@import "./_reset.css";
-@import "./_fonts.css";
-@import "./_colors.css";
-@import "./_sizes.css";
+@import "./_utility.css";
 @import "./_product-header.css";
 @import "./_product-details.css";
 @import "./_product-features.css";
 @import "./_product-images.css";
 @import "./_home-button.css";
-
 
 html {
   scroll-behavior: smooth;
@@ -21,4 +17,3 @@ html {
     display: block;
   }
 }
-

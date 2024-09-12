@@ -1,49 +1,77 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/_order-form.css">
     <title>Order iPhone 15 Pro</title>
 </head>
 
 <body>
-    <header class="order-header">
-        <h1 class="order-header__title">Order iPhone 15 Pro</h1>
+    <header id="product-header" class="product-header">
+        <nav class="product-header__nav">
+            <ul class="product-header__list">
+                <li class="product-header__item"><a class="product-header__link" href="../index.html">Home</a></li>
+        </nav>
+
+        <section class="product-header__banner">
+            <h1 class="product-header__title">Apple iPhone 15 Pro</h1>
+            <blockquote class="product-header__quote" cite="www.apple.com">
+                <p class="product-header__quote">
+                    <em>"The iPhone 15 lineup meets Apple's high standards for energy efficiency and is free of mercury,
+                        PVC,
+                        and beryllium" <sub>-Apple</sub></em>
+                </p>
+            </blockquote>
+        </section>
     </header>
 
     <main>
+        <img class="product-images__main-image" src="../assets/images/product-image.jpg">
         <form action="/submit_order" method="post" class="order-form" id="order-form">
-            <div class="order-form__group">
-                <label class="order-form__label">Select Color:</label>
-                <div class="order-form__radio-group">
+            <fieldset class="order-form__group order-form__group--row">
+                <legend class="order-form__label">Select Color:</legend>
+                <div class="order-form__radio-group order-form__radio-group--black">
                     <input class="order-form__radio-input order-form__radio-input--black" type="radio" id="black" name="color" value="black">
-                    <label for="black" class="order-form__radio-label order-form__radio-label--black"></label>
+                    <label for="black" class="order-form__radio-label"></label>
                 </div>
-                <div class="order-form__radio-group">
-                    <input class="order-form__radio-input order-form__radio-input--white" type="radio" id="white" name="color" value="white">
-                    <label for="white" class="order-form__radio-label order-form__radio-label--white"></label>
-                </div>
-                <div class="order-form__radio-group">
-                    <input class="order-form__radio-input order-form__radio-input--blue" type="radio" id="blue" name="color" value="blue" >
+                <div class="order-form__radio-group order-form__radio-group--lightblue">
+                    <input class="order-form__radio-input order-form__radio-input--blue" type="radio" id="blue" name="color" value="lightblue" >
                     <label for="blue" class="order-form__radio-label order-form__radio-label--blue"></label>
                 </div>
-                <div class="order-form__radio-group">
-                    <input class="order-form__radio-input" type="radio" id="red" name="color" value="red" >
+                <div class="order-form__radio-group order-form__radio-group--tan">
+                    <input class="order-form__radio-input" type="radio" id="red" name="color" value="tan" >
                     <label for="red" class="order-form__radio-label order-form__radio-label--red"></label>
                 </div>
-            </div>
+                <div class="order-form__radio-group  order-form__radio-group--grey">
+                    <input class="order-form__radio-input order-form__radio-input--grey" type="radio" id="grey" name="color" value="grey">
+                    <label for="grey" class="order-form__radio-label order-form__radio-label--grey"></label>
+                </div>
+                <div class="order-form__radio-group order-form__radio-group--vaporwave">
+                    <input class="order-form__radio-input" type="radio" id="red" name="color" value="tan" >
+                    <label for="red" class="order-form__radio-label order-form__radio-label--red"></label>
+                </div>
+            </fieldset>
 
-            <div class="order-form__group">
-                <label for="capacity" class="order-form__label">Select Capacity:</label>
-                <select id="capacity" name="capacity" class="order-form__select" required>
-                    <option value="128gb">128GB</option>
-                    <option value="256gb">256GB</option>
-                    <option value="512gb">512GB</option>
-                    <option value="1tb">1TB</option>
-                </select>
-            </div>
+            <fieldset class="order-form__group order-form__group--column">
+                <legend class="order-form__label">Select Capacity:</legend>
+                <div class="order-form__radio-group">
+                    <input class="order-form__radio-input" type="radio" id="128gb" name="capacity" value="128gb">
+                    <label for="128gb" class="order-form__radio-label">128GB</label>
+                </div>
+                <div class="order-form__radio-group">
+                    <input class="order-form__radio-input" type="radio" id="256gb" name="capacity" value="256gb">
+                    <label for="256gb" class="order-form__radio-label">256GB</label>
+                </div>
+                <div class="order-form__radio-group">
+                    <input class="order-form__radio-input" type="radio" id="512gb" name="capacity" value="512gb">
+                    <label for="512gb" class="order-form__radio-label">512GB</label>
+                </div>
+                <div class="order-form__radio-group">
+                    <input class="order-form__radio-input" type="radio" id="1tb" name="capacity" value="1tb">
+                    <label for="1tb" class="order-form__radio-label">1TB</label>
+                </div>
+            </fieldset>
 
             <div class="order-form__group">
                 <label for="quantity" class="order-form__label">Quantity:</label>

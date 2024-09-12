@@ -1,11 +1,12 @@
 /* This file contains the styles for the image section of the site */
+@import "./_utility.css";
 
 .product-images__main-image {
-  width: 50%;
+  width: 500px;
 }
 
 .product-images__thumbnail {
-  width: 25%;
+  width: 250px;
 }
 
 .product-images,
@@ -16,14 +17,13 @@
 
 .product-images {
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   margin-bottom: var(--margin-medium);
 }
 
-
-
 @media (max-width: 430px) {
-  .product-images{
+  .product-images {
     grid-column: 1;
   }
 

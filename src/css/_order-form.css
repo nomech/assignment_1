@@ -1,10 +1,6 @@
 @import "./_utility.css";
 @import "./_product-header.css";
 
-body {
-  height: 100vh;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -17,24 +13,19 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 1rem;
-  padding: var(--padding-xxxlarge);
+  margin: var(--margin-medium) 0;
+  gap: 12px;
+  padding: var(--padding-medium);
   border: 2px solid #d3d3d3;
   border-radius: 12px;
   width: 400px;
 }
 
-.order-form__radio-input {
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  position: absolute;
-  height: 1px;
-  width: 1px;
-}
-
-.order-form__radio-group {
-  width: 3rem;
-  height: 3em;
+.order-form__group--capacity {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 12px;
 }
 
 .order-form__radio-label--black {
@@ -42,26 +33,22 @@ main {
 }
 
 .product-images__main-image {
-  width: 400px;
+  width: 375px;
 }
 
 .order-form__group {
   display: flex;
-  margin: var(--margin-medium) 0;
+  border: none;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: var(--padding-medium);
 }
 
 .order-form__radio-group {
-  cursor: pointer;
-}
-
-.order-form__radio-group:target {
-  border: 2px solid red;
-}
-.order-form__group--row{
-  gap: 10px;
-}
-.order-form__group--column {
-  flex-direction: column;
+  position: relative;
+  padding: 6px;
+  width: 3rem;
+  height: 3rem;
 }
 
 .order-form__radio-group--black {
@@ -82,4 +69,127 @@ main {
 
 .order-form__radio-group--vaporwave {
   background: linear-gradient(135deg, #ff50bc, #8800ff);
+}
+
+.order-form__radio-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.order-form__radio-input:checked + .order-form__radio-label {
+  background-color: #e7e9fd;
+  border: 2px solid #a3abf9;
+  border-radius: 8px;
+}
+
+.order-form__radio-label:hover {
+  border: 2px solid #a3abf9;
+}
+
+.order-form__radio-label {
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-form__color-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.order-form__color-input:checked + .order-form__color-label {
+  position: absolute;
+  border: 2px solid #a3abf9;
+  width: 54px;
+  height: 54px;
+  right: -3px;
+  top: -3;
+  border-radius: 0;
+}
+
+.order-form__color-label:hover {
+  display: block;
+  position: absolute;
+  border: 2px solid #a3abf9;
+  width: 54px;
+  height: 54px;
+  right: -3px;
+  top: -3;
+  border-radius: 0;
+}
+
+.order-form__color-label {
+  display: block;
+  border: 2px solid transparent;
+  padding: 10px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.order-form__quantity {
+  display: flex;
+  align-self: flex-start;
+  padding: var(--padding-medium);
+  width: 100%;
+  gap: 3rem;
+}
+
+.order-form__quantity-input{
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.order-form__quantity-input:focus-visible {
+  outline: none
+}
+
+.order-form__quantity-input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order-form__contact-info{
+  flex-wrap: wrap;
+  justify-content: unset;
+  gap: 8px;
+}
+
+.order-form__contact-field{
+  border: none;
+  border-bottom: 1px solid #000000;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.order-form__contact-field--firstname, .order-form__contact-field--lastname{
+  width: 45%;
+}
+
+.order-form__contact-field--email{
+  width: 100%;
+}
+.order-form__contact-field--address{
+  width: 100%;
+}
+.order-form__contact-field:focus-visible {
+  outline: none
+}
+
+.order-form__order-button {
+  margin: var(--margin-xxlarge) 0 0 0;
+  text-decoration: none;
+  color: var(--secondary-font-color);
+  font-size: var(--font-size-small);
+  background-color: var(--button-bg);
+  padding: var(--padding-medium) var(--padding-large);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
 }

@@ -2,8 +2,7 @@
 
 .product-header {
     position: relative;
-    height: 35vh;
-    min-height: 375px;
+    min-height: 345px;
     overflow: hidden;
     color: var(--primary-font-color);
   }
@@ -49,7 +48,6 @@
     justify-content: center;
     justify-self: center;
     width: 100%;
-    margin-top: var(--margin-xxxlarge);
   }
 
   .product-header__title {

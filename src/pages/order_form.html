@@ -29,36 +29,38 @@
     <main>
         <img class="product-images__main-image" src="../assets/images/product-image.jpg">
         <form action="/submit_order" method="post" class="order-form" id="order-form">
-            <fieldset class="order-form__group order-form__group--row">
-                <legend class="order-form__label">Select Color:</legend>
+            <fieldset class="order-form__group">
+                <legend class="order-form__label">Select Color</legend>
+
                 <div class="order-form__radio-group order-form__radio-group--black">
-                    <input class="order-form__radio-input order-form__radio-input--black" type="radio" id="black" name="color" value="black">
-                    <label for="black" class="order-form__radio-label"></label>
+                    <input class="order-form__color-input" type="radio" id="black" name="color" value="black" checked>
+                    <label for="black" class="order-form__color-label"></label>
                 </div>
+
                 <div class="order-form__radio-group order-form__radio-group--lightblue">
-                    <input class="order-form__radio-input order-form__radio-input--blue" type="radio" id="blue" name="color" value="lightblue" >
-                    <label for="blue" class="order-form__radio-label order-form__radio-label--blue"></label>
+                    <input class="order-form__color-input" type="radio" id="blue" name="color" value="lightblue">
+                    <label for="blue" class="order-form__color-label"></label>
                 </div>
-                <div class="order-form__radio-group order-form__radio-group--tan">
-                    <input class="order-form__radio-input" type="radio" id="red" name="color" value="tan" >
-                    <label for="red" class="order-form__radio-label order-form__radio-label--red"></label>
+
+                <div class="order-form__radio-group order-form__radio-group--grey">
+                    <input class="order-form__color-input" type="radio" id="grey" name="color" value="grey">
+                    <label for="grey" class="order-form__color-label"></label>
                 </div>
-                <div class="order-form__radio-group  order-form__radio-group--grey">
-                    <input class="order-form__radio-input order-form__radio-input--grey" type="radio" id="grey" name="color" value="grey">
-                    <label for="grey" class="order-form__radio-label order-form__radio-label--grey"></label>
-                </div>
+
                 <div class="order-form__radio-group order-form__radio-group--vaporwave">
-                    <input class="order-form__radio-input" type="radio" id="red" name="color" value="tan" >
-                    <label for="red" class="order-form__radio-label order-form__radio-label--red"></label>
+                    <input class="order-form__color-input" type="radio" id="vaporwave" name="color" value="vaporwave">
+                    <label for="vaporwave" class="order-form__color-label"></label>
                 </div>
+
             </fieldset>
 
-            <fieldset class="order-form__group order-form__group--column">
-                <legend class="order-form__label">Select Capacity:</legend>
+            <fieldset class="order-form__group order-form__group--capacity">
+                <legend class="order-form__label">Select Capacity</legend>
                 <div class="order-form__radio-group">
-                    <input class="order-form__radio-input" type="radio" id="128gb" name="capacity" value="128gb">
+                    <input class="order-form__radio-input" type="radio" id="128gb" name="capacity" value="128gb" checked>
                     <label for="128gb" class="order-form__radio-label">128GB</label>
                 </div>
+
                 <div class="order-form__radio-group">
                     <input class="order-form__radio-input" type="radio" id="256gb" name="capacity" value="256gb">
                     <label for="256gb" class="order-form__radio-label">256GB</label>
@@ -73,14 +75,21 @@
                 </div>
             </fieldset>
 
-            <div class="order-form__group">
-                <label for="quantity" class="order-form__label">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" class="order-form__input" min="1" max="10" required>
+            <div class="order-form__quantity">
+                <label for="quantity" class="order-form__label">How many?</label>
+                <input type="number" id="quantity" name="quantity" class="order-form__quantity-input" min="1" max="10" value="1" required>
             </div>
 
-            <div class="order-form__group">
-                <button type="submit" class="order-form__button">Place Order</button>
-            </div>
+            <fieldset class="order-form__group order-form__contact-info">
+                <legend class="order-form__label">Contact Info</legend>
+                <input class="order-form__contact-field order-form__contact-field--firstname" type="text" id="firstname" placeholder="Firstname" required>
+                <input class="order-form__contact-field order-form__contact-field--lastname" type="text" id="lastname" placeholder="Lastname" required>
+                <input class="order-form__contact-field order-form__contact-field--email" type="email" id="email" placeholder="Email" required>
+                <input class="order-form__contact-field order-form__contact-field--address" type="text" id="address" placeholder="Address" required>
+            </fieldset>
+
+
+            <button type="submit" class="order-form__order-button">To Payment!</button>
         </form>
     </main>
 </body>

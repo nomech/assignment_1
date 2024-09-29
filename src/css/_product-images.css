@@ -44,10 +44,15 @@
 
 
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
   .product-images {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
+  }
+
+  .product-images {
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .product-images__main-image {

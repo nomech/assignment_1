@@ -4,6 +4,7 @@
 .home-button {
     background: #ffffff;
     width: 1.5rem;
+    height: 1.5rem;
     position: fixed;
     bottom: 1rem;
     z-index: 99999;

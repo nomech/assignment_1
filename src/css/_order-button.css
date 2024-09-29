@@ -1,0 +1,22 @@
+@import "./_utility.css";
+
+.order-button {
+  display: flex;
+  width: 178px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: var(--margin-xxlarge) 0 0 0;
+  text-decoration: none;
+  color: var(--primary-font-color);
+  font-size: var(--font-size-small);
+  background-color: var(--button-bg);
+  padding: var(--padding-medium) var(--padding-large);
+  border-radius: 8px;
+  border: none;
+}
+
+.order-button__icon {
+  width: 24px;
+  height: 24px;
+}

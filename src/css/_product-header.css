@@ -1,8 +1,10 @@
 @import "./_utility.css";
 
 .product-header {
+  display: flex;
+  flex-direction: column;
     position: relative;
-    min-height: 345px;
+    min-height: 300px;
     overflow: hidden;
     color: var(--primary-font-color);
   }
@@ -45,9 +47,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    width: 100%;
+ 
   }
 
   .product-header__title {
@@ -59,16 +59,6 @@
     margin: 0 var(--margin-medium);
   }
   
-  .product-header__order-now-button {
-    margin: var(--margin-xxlarge) 0 0 0;
-    text-decoration: none;
-    color: var(--secondary-font-color);
-    font-size: var(--font-size-small);
-    background-color: var(--button-bg);
-    padding: var(--padding-medium) var(--padding-large);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-  }
 
   
   @media (max-width: 430px) {

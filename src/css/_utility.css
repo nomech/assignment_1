@@ -78,3 +78,7 @@
     --button-bg: #f7f7f7;;
     --border-color: #a3a3a3;
       }
+
+      svg {
+        width: 18px;
+      }

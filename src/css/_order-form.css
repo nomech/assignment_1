@@ -130,6 +130,13 @@ main {
   width: 52px;
   height: 52px;
   cursor: pointer;
+  position: absolute;
+  top: -3;
+  right: -3;
+}
+
+.order-form__image {
+  width: 500px;
 }
 
 .order-form__quantity {

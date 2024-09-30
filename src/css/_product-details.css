@@ -40,6 +40,9 @@
 }
 
 .product-details__sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   font-weight: lighter;
   padding: var(--padding-small) 0;
 }
@@ -69,7 +72,6 @@
 
   .product-details__subitem {
     margin: var(--margin-small) var(--margin-medium);
-    text-decoration: underline;
   }
   
   .product-details__subitem--centered{

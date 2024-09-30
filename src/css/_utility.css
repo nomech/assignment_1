@@ -77,6 +77,8 @@
     --secondary-font-color: #6e6e73;
     --button-bg: #f7f7f7;;
     --border-color: #a3a3a3;
+    --border-color-light: #e6e6e6;
+    --table-highlight: #f6f5f8;
       }
 
       svg {

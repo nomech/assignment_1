@@ -1,5 +1,6 @@
 @import "./_utility.css";
 @import "./_product-header.css";
+@import "./_order-button.css";
 
 main {
   display: flex;
@@ -16,7 +17,7 @@ main {
   margin: var(--margin-medium) 0;
   gap: 12px;
   padding: var(--padding-medium);
-  border: 2px solid #d3d3d3;
+  border: 2px solid var(--border-color-light);
   border-radius: 12px;
   width: 400px;
 }
@@ -191,12 +192,5 @@ main {
 }
 
 .order-form__order-button {
-  margin: var(--margin-xxlarge) 0 0 0;
-  text-decoration: none;
-  color: var(--secondary-font-color);
-  font-size: var(--font-size-small);
-  background-color: var(--button-bg);
-  padding: var(--padding-medium) var(--padding-large);
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
+
 }

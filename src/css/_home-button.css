@@ -2,7 +2,7 @@
 @import "./_utility.css";
 
 .home-button {
-    background: #ffffff;
+    background: var(--primary-color);
     width: 1.5rem;
     height: 1.5rem;
     position: fixed;

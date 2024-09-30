@@ -22,7 +22,6 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: var(--margin-medium);
   gap: 24px;
 }
 

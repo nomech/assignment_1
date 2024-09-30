@@ -19,7 +19,7 @@
     background-image: url("../assets/images/header-banner.webp");
     background-position: center;
     background-size: cover;
-    filter: blur(4px) brightness(0.8);
+    filter: blur(4px) brightness(0.6);
     z-index: -1;
   }
   

@@ -34,13 +34,13 @@
 .product-features__price {
   grid-column: 2;
   grid-row: 3;
+  color: #000000;
 }
 
 .product-feature__order-now-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: var(--margin-xxlarge) 0 0 0;
   text-decoration: none;
   color: var(--secondary-font-color);
   font-size: var(--font-size-small);

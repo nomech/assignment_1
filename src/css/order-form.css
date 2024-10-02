@@ -1,12 +1,15 @@
-@import "./_utility.css";
-@import "./_product-header.css";
-@import "./_order-button.css";
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-main {
+.order-form__main-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .order-form {
@@ -15,19 +18,14 @@ main {
   align-items: center;
   justify-content: center;
   margin: var(--margin-medium) 0;
-  gap: 12px;
+  gap: var(--gap-large);
   padding: var(--padding-medium);
   border: 2px solid var(--border-color-light);
-  border-radius: 12px;
+  border-radius: var(--border-radius-medium);
   width: 400px;
 }
 
-.order-form__group--capacity {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 12px;
-}
+
 
 .order-form__radio-label--black {
   background-color: #000000;
@@ -47,7 +45,7 @@ main {
 
 .order-form__radio-group {
   position: relative;
-  padding: 6px;
+  padding: var(--padding-small);
   width: 3rem;
   height: 3rem;
 }
@@ -92,7 +90,7 @@ main {
 .order-form__radio-label {
   border: 2px solid transparent;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
   cursor: pointer;
 }
 
@@ -128,8 +126,8 @@ main {
   display: block;
   border: 2px solid transparent;
   padding: 10px;
-  width: 52px;
-  height: 52px;
+  width: 54px;
+  height: 54px;
   cursor: pointer;
   position: absolute;
   top: -3;
@@ -145,13 +143,14 @@ main {
   align-self: flex-start;
   padding: var(--padding-medium);
   width: 100%;
-  gap: 3rem;
+  gap: var(--margin-xlarge); /* Replaced 3rem */
 }
+
 
 .order-form__quantity-input{
   border: none;
   border-bottom: 1px solid #000000;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   text-align: center;
 }
 
@@ -167,7 +166,7 @@ main {
 .order-form__contact-info{
   flex-wrap: wrap;
   justify-content: unset;
-  gap: 8px;
+  gap: var(--gap-large);
 }
 
 .order-form__contact-field{
@@ -191,6 +190,16 @@ main {
   outline: none
 }
 
-.order-form__order-button {
+@media screen and (max-width: 900px) {
+  body {
+    height: unset;
+  }
+  
+}
 
+@media screen and (max-width: 768px) {
+  .order-form__image {
+    width: 375px;
+  }
+  
 }

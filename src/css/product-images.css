@@ -1,6 +1,4 @@
 /* This file contains the styles for the image section of the site */
-@import "./_utility.css";
-
 .product-images__main-image {
   width: 500px;
 }
@@ -41,6 +39,7 @@
 }
 
 @media (max-width: 460px) {
+
   .product-images {
     grid-column: 1;
     grid-row: 2;
@@ -53,5 +52,9 @@
 
   .product-images__main-image {
     width: 100%;
+  }
+
+  .product-images__thumbnail {
+    width: 300px;
   }
 }

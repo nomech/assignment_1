@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/_order-form.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/product-header.css">
+    <link rel="stylesheet" href="../css/order-form.css">
+    <link rel="stylesheet" href="../css/order-button.css">
+    <link rel="stylesheet" href="../css/product-footer.css">
     <title>Order iPhone 15 Pro</title>
 </head>
 
@@ -26,7 +30,7 @@
         </section>
     </header>
 
-    <main>
+    <main class="order-form__main-section">
         <img class="order-form__image" src="../assets/images/product-image.jpg">
         <form action="/submit_order" method="post" class="order-form" id="order-form">
             <fieldset class="order-form__group">
@@ -92,6 +96,9 @@
             <button type="submit" class="order-form__order-button order-button">To Payment!</button>
         </form>
     </main>
+    <footer class="product-footer">
+        <p class="footer__text">© 2024 Apple Inc. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

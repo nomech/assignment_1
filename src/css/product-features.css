@@ -1,16 +1,15 @@
 /* This file contains the styles for the product-features section of the site */
 
-@import "./_utility.css";
 
 .product-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 64px 0;
-  gap: 46px;
+  margin: calc(var(--padding-xlarge) * 2) 0;
+  gap: calc(var(--gap-medium) * 2);
 }
 
 .product-features__list {
-  padding: var(--padding-none);
+  padding: var(--none);
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +24,7 @@
 .product-features__item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--gap-medium);
   color: var(--secondary-bg);
   margin: var(--margin-medium) 0;
   flex-grow: 1;
@@ -34,29 +33,13 @@
 .product-features__price {
   grid-column: 2;
   grid-row: 3;
-  color: #000000;
+  color: var(--third-font-color);
 }
 
-.product-feature__order-now-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: var(--secondary-font-color);
-  font-size: var(--font-size-small);
-  background-color: var(--button-bg);
-  padding: var(--padding-medium) var(--padding-large);
-  border-radius: 24px;
-  border: 1px solid var(--border-color);
-  grid-column: 2;
-  grid-row: 3;
-  width: 200px;
-  height: 54px;
-}
 
 .product-feature__order-now-button:hover {
-  background: #a2a2a2;
-  color: #ffffff;
+  background: var(--button-bg-hover);
+  color: var(--primary-font-color);
 }
 
 @media (max-width: 460px) {
@@ -66,10 +49,11 @@
   }
 
   .product-features__title {
-    padding: 2rem 0;
+    padding: var(--margin-xlarge) 0; 
     text-align: center;
     grid-column: 1;
-    grid-row: 1;  }
+    grid-row: 1;  
+  }
 
   .product-features__list {
     margin: var(--margin-medium);

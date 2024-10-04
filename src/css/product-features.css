@@ -37,11 +37,6 @@
 }
 
 
-.product-feature__order-now-button:hover {
-  background: var(--button-bg-hover);
-  color: var(--primary-font-color);
-}
-
 @media (max-width: 460px) {
   .product-features {
     grid-template-columns: 1fr;

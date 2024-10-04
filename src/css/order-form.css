@@ -149,6 +149,7 @@ body {
 
 .order-form__quantity-input{
   border: none;
+  width: 64px;
   border-bottom: 1px solid #000000;
   font-size: var(--font-size-small);
   text-align: center;

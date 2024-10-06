@@ -1,5 +1,5 @@
 .product-details__banner {
-  background-image: url("../assets/images/product-banner.webp");
+  background-image: url("../assets/images/product-banner-1920.avif");
   background-position: top;
   background-size: cover;
   height: 20rem;
@@ -63,6 +63,11 @@
 }
 
 @media (max-width: 430px) {
+  
+
+  .product-details__banner {
+    background-image: url("../assets/images/product-banner-360.avif");
+  }
 
   .product-details__list {
     grid-template-columns: 1fr;

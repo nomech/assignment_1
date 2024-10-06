@@ -1,5 +1,4 @@
 /* This file contains the style for the home button that is found in the right down corner*/
-@import "./_utility.css";
 
 .home-button {
     background: var(--primary-color);

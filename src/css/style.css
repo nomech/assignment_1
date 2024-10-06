@@ -1,13 +1,98 @@
+/* This file contains standardized sizes */
+/* this file resetes and sets default values globally */
+
+/* This file contains all the fonts, I've opted to use them locally since using google fonts will make the site breach GDPR */
+/* Source:https://thehackernews.com/2022/01/german-court-rules-websites-embedding.html */
+/* https://rewis.io/urteile/urteil/lhm-20-01-2022-3-o-1749320/ */
+/* LG München, Urteil vom 20.01.2022, Az. 3 O 17493/20 (REWIS RS 2022, 1892)*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 1rem;
+  --border-radius-large: 1.5rem;
+
+  --gap-small: 0.5rem;
+  --gap-medium: 1rem;
+  --gap-large: 2rem;
+
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem;
+  --margin-large: 1.5rem;
+  --margin-xlarge: 2rem;
+
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --padding-xlarge: 2rem;
+  --none: 0;
+
+  --font-size-small: 1.1rem;
+  --font-size-medium: 1.4rem;
+  --font-size-large: 2.25rem;
+  --primary-font: "Roboto", "sans-serif";
+
+  --primary-color: #f6f5f8;
+  --secondary-bg: #6e6e73;
+
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #6e6e73;
+  --third-font-color: #000000;
+
+  --button-bg: #f7f7f7;
+  --button-bg-hover: #a2a2a2;
+
+  --border-color: #a3a3a3;
+  --border-color-light: #e6e6e6;
+  --table-highlight: #f6f5f8;
+}
+
 /* This is the main CSS faile */
-
-@import "./_utility.css";
-@import "./_product-header.css";
-@import "./_product-details.css";
-@import "./_product-features.css";
-@import "./_product-images.css";
-@import "./_home-button.css";
-
 html {
   scroll-behavior: smooth;
 }
 
+svg {
+  width: 18px;
+}

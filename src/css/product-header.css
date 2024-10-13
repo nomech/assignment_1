@@ -1,7 +1,11 @@
-
 .product-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   min-height: 300px;
   overflow: hidden;
@@ -18,13 +22,18 @@
   background-image: url("../assets/images/header-banner-1920.avif");
   background-position: center;
   background-size: cover;
-  filter: blur(4px) brightness(0.6);
+  -webkit-filter: blur(4px) brightness(0.6);
+          filter: blur(4px) brightness(0.6);
   z-index: -1;
 }
 
 .product-header__list--desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: var(--margin-none);
 }
 
@@ -49,9 +58,16 @@
 }
 
 .product-header__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .product-header__title {
@@ -77,8 +93,12 @@
   }
 
   .product-header__mobile-drawer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 
   .product-header__mobile-menu-label {
@@ -99,10 +119,15 @@
 
 
   .product-header__mobile-menu-toggle:checked ~ .product-header__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: absolute;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 var(--padding-medium);
     background-color: #3c415e;
     top: 0;

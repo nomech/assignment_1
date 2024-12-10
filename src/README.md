@@ -20,3 +20,7 @@ This project is a website for the Apple iPhone 15 Pro. It includes a main produc
 - **CSS3**
 - **Font Awesome Icons**
 - **Netlify**
+
+## Resources
+
+[Preloading Images Using HTML](https://webdesign.tutsplus.com/best-ways-to-preload-images-using-javascript-css-and-html--cms-41329t)

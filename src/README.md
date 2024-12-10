@@ -20,6 +20,7 @@ This project is a website for the Apple iPhone 15 Pro. It includes a main produc
 - **CSS3**
 - **Font Awesome Icons**
 - **Netlify**
+- **Google Fonts**
 
 ## Resources
 

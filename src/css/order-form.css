@@ -196,8 +196,7 @@ body {
 }
 
 .order-form__contact-info{
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
   -webkit-box-pack: unset;
       -ms-flex-pack: unset;
           justify-content: unset;

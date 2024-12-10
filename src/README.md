@@ -12,11 +12,11 @@ A responsive website showcasing the Apple iPhone 15 Pro, with detailed product f
 
 ## Description
 
-This project is a website for the Apple iPhone 15 Pro. It includes a main product page highlighting the key features and specifications of the device, as well as an order form for customers to purchase the product.
+This project is a website for the Apple iPhone 15 Pro. It includes a main product page highlighting the key features and specifications of the phone, as well as an order form for customers to purchase the product.
 
 ## Technologies Used
 
-- **HTML5**: Structuring the content of the website.
-- **CSS3**: Styling and layout of the website.
-- **Font Awesome Icons**: Enhancing the visual appeal with scalable icons.
-- **Netlify**: Hosting and deployment platform.
+- **HTML5**
+- **CSS3**
+- **Font Awesome Icons**
+- **Netlify**

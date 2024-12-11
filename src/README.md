@@ -24,4 +24,5 @@ This project is a website for the Apple iPhone 15 Pro. It includes a main produc
 
 ## Resources
 
-[Preloading Images Using HTML](https://webdesign.tutsplus.com/best-ways-to-preload-images-using-javascript-css-and-html--cms-41329t)
+- [Preloading Images Using HTML](https://webdesign.tutsplus.com/best-ways-to-preload-images-using-javascript-css-and-html--cms-41329t)
+- [Autoprefixer CSS online](https://autoprefixer.github.io/)

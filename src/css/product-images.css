@@ -1,4 +1,11 @@
 /* This file contains the styles for the image section of the site */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
 .product-images__main-image {
   width: 500px;
 }
